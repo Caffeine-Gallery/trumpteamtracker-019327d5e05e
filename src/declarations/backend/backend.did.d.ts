@@ -3,7 +3,10 @@ import type { ActorMethod } from '@dfinity/agent';
 import type { IDL } from '@dfinity/candid';
 
 export interface Appointee {
+  'previousExperience' : string,
   'name' : string,
+  'education' : string,
+  'biography' : string,
   'imageUrl' : string,
   'position' : string,
 }

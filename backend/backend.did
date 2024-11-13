@@ -1,8 +1,11 @@
 type Appointee = 
  record {
+   biography: text;
+   education: text;
    imageUrl: text;
    name: text;
    position: text;
+   previousExperience: text;
  };
 service : {
   getAppointees: () -> (vec Appointee) query;

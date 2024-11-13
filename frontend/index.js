@@ -28,10 +28,23 @@ function renderAppointees(appointees) {
                          class="card-img-top" 
                          alt="${appointee.name}"
                          onerror="this.onerror=null; this.src='https://placehold.co/400x500/1C2841/C5A572?text=${encodeURIComponent(appointee.name)}'">
+                    <div class="position-overlay">
+                        <span>${appointee.position}</span>
+                    </div>
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">${appointee.name}</h5>
-                    <p class="card-text">${appointee.position}</p>
+                    <div class="card-details">
+                        <p class="card-text biography">${appointee.biography}</p>
+                        <div class="details-section">
+                            <h6 class="details-title">Previous Experience</h6>
+                            <p class="details-text">${appointee.previousExperience}</p>
+                        </div>
+                        <div class="details-section">
+                            <h6 class="details-title">Education</h6>
+                            <p class="details-text">${appointee.education}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         `;

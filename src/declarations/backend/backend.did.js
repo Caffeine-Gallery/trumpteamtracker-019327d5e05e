@@ -1,6 +1,9 @@
 export const idlFactory = ({ IDL }) => {
   const Appointee = IDL.Record({
+    'previousExperience' : IDL.Text,
     'name' : IDL.Text,
+    'education' : IDL.Text,
+    'biography' : IDL.Text,
     'imageUrl' : IDL.Text,
     'position' : IDL.Text,
   });
