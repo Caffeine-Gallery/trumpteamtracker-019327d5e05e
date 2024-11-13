@@ -24,7 +24,10 @@ function renderAppointees(appointees) {
         card.innerHTML = `
             <div class="card h-100 appointee-card">
                 <div class="card-img-container">
-                    <img src="${appointee.imageUrl}" class="card-img-top" alt="${appointee.name}">
+                    <img src="${appointee.imageUrl}" 
+                         class="card-img-top" 
+                         alt="${appointee.name}"
+                         onerror="this.onerror=null; this.src='https://placehold.co/400x500/1C2841/C5A572?text=${encodeURIComponent(appointee.name)}'">
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">${appointee.name}</h5>
