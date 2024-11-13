@@ -1,0 +1,10 @@
+type Appointee = 
+ record {
+   imageUrl: text;
+   name: text;
+   position: text;
+ };
+service : {
+  getAppointees: () -> (vec Appointee) query;
+  searchAppointees: (text) -> (vec Appointee) query;
+}
